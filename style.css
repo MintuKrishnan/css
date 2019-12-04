@@ -11,7 +11,7 @@
 
     html,body,header,.view {height: 105%;font-family: 'Montserrat', sans-serif;}
 
-    .col-md-7,.col-md-8,.col-md-4,.col-md-9,.col-md-6{
+    .col-md-7, .col-md-8, .col-md-9, .col-md-6{
         padding-left: 0px !important;
     }
     .card-title{
@@ -27,10 +27,12 @@
         font-size: 18px !important;
     }
     .card{
-        box-shadow: none !important;
-        border: solid 1px #d3c3f1 !important;
-        border-radius: 0px !important;
+        box-shadow: none ;
+        border: solid 1px #d3c3f1 ;
+        border-radius: 0px ;
     }
+   
+   
     .card-text{
         margin-bottom:0% !important;
         
@@ -1115,11 +1117,21 @@ crowdz-product-page-style
     #crowdz-banner .container{
         margin-left: 100px !important;
     }
+  
     #pricing-page.container-fluid{
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
+    #learn-more-desc{
+        text-align: center !important;
 
+    }
+    .text-mar{
+        margin-top: 75px;
+    }
+.enjoy-pad{
+    padding-top: 75px;
+}
     .page-section {
         overflow: hidden;
     }
@@ -1164,12 +1176,18 @@ crowdz-product-page-style
     /*-------------------------------
     pricing-card #pricing-card
     ---------------------------------*/
+    
+        #pricing-cards .row-p{
+            height: 20rem;
+        }
+      
     #pricing-cards, #pricing-cards-mob{
         background-color: #010341 !important;
         padding-left: 100px;
         padding-right: 100px;
         padding-bottom: 250px;
     }
+  
     #pricing-cards .pricing-card, #pricing-cards-mob .pricing-card{
         padding-left: 0px !important;
         padding-right: 0px !important;
@@ -1183,34 +1201,47 @@ crowdz-product-page-style
         padding-right: 1px !important;
     }
     #pricing-cards .pricing-title, #pricing-cards-mob .pricing-title{
-        font-size: 14px !important;
+        font-size: 20px !important;
         font-weight: 700 !important;
         letter-spacing: 1.6px;
-        padding-bottom: 10px !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px;
         text-align: center;
         text-transform: uppercase;
 
     }
+    #pricing-cards .pricing-sub-title, #pricing-cards-mob .pricing-sub-title{
+        font-size: 10px !important;
+        font-weight: 400 !important;
+        letter-spacing: 1.6px;
+        padding-top: 0px;
+        padding-bottom: 8px !important;
+        text-align: center;
+     
+
+    }
+
+
     #pricing-cards .pricing-amt, #pricing-cards-mob .pricing-amt{
-        font-size: 17px !important;
+        font-size: 20px !important;
         font-weight: 700 !important;
         line-height: 24px !important;
         text-align: center;
         letter-spacing: 2px !important; 
+        padding-bottom: 40px !important;
         
     }
-    #pricing-cards .pricing-monthly, #pricing-cards-mob .pricing-monthly{
-        margin-inline-start: 60px !important;
-        margin-inline-end: 60px !important;
-    }
-    #pricing-cards .pricing-rnge, #pricing-cards-mob .pricing-rnge{
-        font-size: 12px !important;
-        font-weight: 500 !important;
-        letter-spacing: 1px;
-        line-height: 15px;
-       
+    #pricing-cards .pricing-feature, #pricing-cards-mob .pricing-feature{
+        font-size: 14px !important;
+       margin-bottom: 10px;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+        text-align:left;
+        letter-spacing: 1.2px !important; 
+        padding-bottom: 0px !important;
         
     }
+
     #pricing-cards .btn, #pricing-cards-mob .btn{
         border: 1px solid #fff;
         border-radius: 25px;
@@ -1254,20 +1285,31 @@ crowdz-product-page-style
     }
 
     #pricing-cards .btn-trial, #pricing-cards-mob .btn-trial{
+        /* background-color: #855be0; */
+        border: 1px solid wheat;
+        
+        margin:70px 25px 0px 25px !important;
+        margin-bottom:10px !important ;
+        width: -webkit-fill-available;
+    }
+    #pricing-cards .btn-active, #pricing-cards-mob .btn-active{
         background-color: #855be0;
-        border: none;
     }
     
-
-    #pricing-cards .card-body:hover, #pricing-cards-mob .card-body:hover{
+    #pricing-cards .card-wow, #pricing-cards-mob .card-wow{
+        
+        border: solid 1px white !important;
+       
+    }
+    #pricing-cards .card-wow:hover, #pricing-cards-mob .card-wow:hover{
         
         color: white !important;
         border: solid 1px white !important;
-        background-color: #855be0;
-        cursor: pointer;
+        background-color: #855be0 !important;
+        cursor: pointer !important;
     }
 
-    #pricing-cards .card-body:hover .btn, #pricing-cards-mob .card-body:hover .btn{
+    #pricing-cards .card-wow:hover .btn, #pricing-cards-mob .card-wow:hover .btn{
         
         background-color:white;
         border: none;
@@ -1277,7 +1319,9 @@ crowdz-product-page-style
         background-color:white;
         border: none;
     }
-
+#pricing-cards .dark-blue{
+    color:#888;
+}
     .learn-more{
         font-size: 12px !important;
         font-weight: 500 !important;
@@ -1383,10 +1427,10 @@ crowdz-product-page-style
             padding-left: 30px;
             padding-right: 30px;
         }
-        #pricing-cards .card-body, #pricing-cards-mob .card-body{
+        /* #pricing-cards .card-body, #pricing-cards-mob .card-body{
             border-radius: 15px !important;
             border: solid 1px #ffffff !important;
-        }
+        } */
         #pricing-cards .pricing-condi, #pricing-cards-mob .pricing-condi{
             opacity: 0.4983026;
             width: 100%;
@@ -1446,10 +1490,10 @@ crowdz-product-page-style
             padding-left: 30px;
             padding-right: 30px;
         }
-        #pricing-cards .card-body, #pricing-cards-mob .card-body{
+        /* #pricing-cards .card-body, #pricing-cards-mob .card-body{
             border-radius: 15px !important;
             border: solid 1px #ffffff !important;
-        }
+        } */
         #pricing-cards .pricing-condi, #pricing-cards-mob .pricing-condi{
             opacity: 0.4983026;
             width: 100%;
@@ -1508,10 +1552,10 @@ crowdz-product-page-style
             padding-left: 30px;
             padding-right: 30px;
         }
-        #pricing-cards .card-body, #pricing-cards-mob .card-body{
+        /* #pricing-cards .card-body, #pricing-cards-mob .card-body{
             border-radius: 15px !important;
             border: solid 1px #ffffff !important;
-        }
+        } */
         #pricing-cards .pricing-condi, #pricing-cards-mob .pricing-condi{
             opacity: 0.4983026;
             width: 100%;
@@ -4684,46 +4728,18 @@ crowdz-product-page-style
     
     
     
-/*===============================================================================================
-
-==================================================
-    crowdz press page 
-==================================================*/
-#press-web-tab .btn-group{
-    display: flex;
-    padding-left: 310px;
-    padding-right: 310px;
-}
-
-#press-gallery h2, #press-gallery-mob h2{
-  color: #010341 !important;
-  font-size: 28px !important;
-  font-weight: 700 !important;
-  line-height: 34px !important;
-}
-#press-page-web h2, #media-web h2, #awards-web h2{
-  color: #010341 !important;
-  font-size: 80px !important;
-  font-weight: 700 !important;
-  line-height: 98px !important;
-}
+/*================================================================================================
+	/*-------------------------------
+    #press
+    ---------------------------------*/
 
     #press-mob-ver{
         display: none;
     }
-    #press-page-web.container-fluid{
-        padding-left: 110px;
-        padding-right: 110px;
+    #press-page-web.container-fluid, #press-page-mob.container-fluid{
+        padding-left: 90px;
+        padding-right: 90px;
         padding-top: 10% !important;
-        padding-left: 100px;
-            padding-right: 100px;
-    }
-    #press-page-mob.container-fluid{
-        padding-left: 110px;
-        padding-right: 110px;
-        padding-top: 8% !important;
-        padding-left: 30px;
-            padding-right: 20px;
     }
     #press-mob-tab{
         display: none;
@@ -4744,17 +4760,14 @@ crowdz-product-page-style
         border-color: #d3c3f1;
     }
     #press-web-tab .btn-group .btn{
-        padding-left: 0px;
-        padding-right:0px;
+        padding-left: 70px;
+        padding-right: 70px;
         padding-top: 18px;
         padding-bottom: 18px;
         color: #010341;
     }
-    #press-release a, #press-release-mob a{
+    #press-release a{
         color: #010341;
-    }
-    #crowdz-featured-section-mob img{
-        width: 100%;
     }
     
     #press-web-tab .btn-group *:hover{
@@ -4771,7 +4784,7 @@ crowdz-product-page-style
     #press-page-web .section-heading, #press-page-mob .section-heading{
         padding-bottom: 80px;
     }
-    #crowdz-featured-section.container-fluid{
+    #crowdz-featured-section.container-fluid, #crowdz-featured-section-mob.container-fluid{
         padding-left: 80px;
         padding-right: 80px;
     }
@@ -4779,20 +4792,6 @@ crowdz-product-page-style
     #crowdz-featured-section, #crowdz-featured-section-mob{
         padding-top: 20px;
     }
-     #crowdz-featured-section-mob.container-fluid {
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-        #crowdz-featured-section-mob .card {
-            border: solid 1px #d0d0d0 !important;
-        }
-         #crowdz-featured-section-mob h4{
-
-  color: #010341 !important;
-  font-size: 18px !important;
-  font-weight: 500 !important;
-  line-height: 22px !important;
-         }
     
 
     #crowdz-featured-section p, #crowdz-media-kit p, #crowdz-awards p, #crowdz-featured-section-mob p{
@@ -4805,14 +4804,14 @@ crowdz-product-page-style
     }
    
      #crowdz-featured-section-mob .card{
-        border-style: solid  !important;
-        border-color: silver  !important;
-        border-width: 1px !important;
+        border-style: solid  ;
+        border-color: silver ;
+        border-width: 1px;
     }
-    .flex-1 {
-flex: 1;
-}
- 
+    #crowdz-featured-section-mob .card .col-mb-6{
+        border-style: none !important ;
+      
+    }
 	
 	.press-card .card{
         border: black!important;
@@ -4824,8 +4823,8 @@ flex: 1;
 		font-weight: 500;
     }
     #media-web.container-fluid, #media-mob.container-fluid{
-        padding-left: 110px;
-        padding-right: 110px;
+        padding-left: 100px;
+        padding-right: 100px;
        
     }
     #media-web.section-heading, #media-mob .section-heading{
@@ -4851,23 +4850,21 @@ flex: 1;
 
    
     #logo-web.container-fluid, #logo-mob.container-fluid{
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 90px;
+        padding-right: 90px;
         background-color: #f6f6f4;
         padding-top: 100px;
         padding-bottom: 100px;
     }
     
     #press-gallery.container-fluid, #press-gallery-mob.container-fluid{
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 80px;
+        padding-right: 80px;
         background-color: #f6f6f4;
     }
     #press-release.container-fluid, #press-release-mob.container-fluid{
         padding:100px 80px 100px 80px;
         background-color: #f6f6f4;
-        padding-left: 100px;
-        padding-right: 100px;
     }
     #press-release .hr-light, #press-release-mob .hr-light{
         opacity: 0.09942336 !important;
@@ -4875,8 +4872,8 @@ flex: 1;
         width: 100% !important;
     }
     #awards-web.container-fluid, #awards-mob.container-fluid{
-        padding-left: 110px;
-        padding-right: 110px;
+        padding-left: 90px;
+        padding-right: 90px;
         padding-top: 10% !important;
     }
     #awards-web .section-heading, #awards-mob .section-heading{
@@ -5026,7 +5023,7 @@ flex: 1;
         #press-page-web .banner-desc, #press-page-mob .banner-desc{
             max-width: 100%;
         }
-        #press-page-web h2, #press-page-mob h2{
+        #press-page-web h1, #press-page-mob h1{
             font-size: 50px !important;
             font-weight: 700 !important;
             line-height: 50px !important;
@@ -5047,7 +5044,7 @@ flex: 1;
         #media-web .banner-desc, #media-mob .banner-desc{
             max-width: 100%;
         }
-        #media-web h2, #media-mob h2{
+        #media-web h1, #media-mob h1{
             font-size: 50px !important;
             font-weight: 700 !important;
             line-height: 50px !important;
@@ -5060,11 +5057,10 @@ flex: 1;
             margin-right: 0px;
             margin-left: 0px;
         }
-        #crowdz-featured-section.container-fluid{
+        #crowdz-featured-section.container-fluid, #crowdz-featured-section-mob.container-fluid {
             padding-left: 15px;
             padding-right: 15px;
         }
-       
         #crowdz-featured-section .btn, #crowdz-featured-section-mob .btn {
             float: left;
             margin-bottom: 0px;        }
@@ -5104,7 +5100,7 @@ flex: 1;
             #awards-web .banner-desc, #awards-mob .banner-desc{
                 max-width: 100%;
             }
-            #awards-web h2, #awards-mob h2{
+            #awards-web h1, #awards-mob h1{
                 font-size: 50px !important;
                 font-weight: 700 !important;
                 line-height: 50px !important;
@@ -5165,7 +5161,7 @@ flex: 1;
         #press-page-web .banner-desc, #press-page-mob .banner-desc{
             max-width: 100%;
         }
-        #press-page-web h2, #press-page-mob h2{
+        #press-page-web h1, #press-page-mob h1{
             font-size: 50px !important;
             font-weight: 700 !important;
             line-height: 50px !important;
@@ -5243,7 +5239,7 @@ flex: 1;
             #awards-web .banner-desc, #awards-mob .banner-desc{
                 max-width: 100%;
             }
-            #awards-web h2, #awards-mob h2{
+            #awards-web h1, #awards-mob h1{
                 font-size: 50px !important;
                 font-weight: 700 !important;
                 line-height: 50px !important;
@@ -5298,11 +5294,15 @@ flex: 1;
             color: #010341; 
 
         }
-
+        #press-page-web.container-fluid, #press-page-mob.container-fluid{
+            padding-left: 30px;
+            padding-right: 20px;
+            
+        }
         #press-page-web .banner-desc, #press-page-mob .banner-desc{
             max-width: 100%;
         }
-        #press-page-web h2, #press-page-mob h2{
+        #press-page-web h1, #press-page-mob h1{
             font-size: 50px !important;
             font-weight: 700 !important;
             line-height: 50px !important;
@@ -5335,7 +5335,7 @@ flex: 1;
             margin-right: 0px;
             margin-left: 0px;
         }
-        #crowdz-featured-section.container-fluid{
+        #crowdz-featured-section.container-fluid, #crowdz-featured-section-mob.container-fluid {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -5396,6 +5396,7 @@ flex: 1;
     @media (max-width: 1199px) { 
         
      }
+
 
 
 
