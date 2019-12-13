@@ -54,11 +54,11 @@ $(function() {
   var selectedClass = "";
   $(".filter").click(function(){
   selectedClass = $(this).attr("data-rel");
-  $("#gallery-testim").fadeTo(100, 0.1);
-  $("#gallery-testim div").not("."+selectedClass).fadeOut().removeClass('animation');
+  $("#marquee-vertical").fadeTo(100, 0.1);
+  $("#marquee-vertical div").not("."+selectedClass).fadeOut().removeClass('animation');
   setTimeout(function() {
   $("."+selectedClass).fadeIn().addClass('animation');
-  $("#gallery-testim").fadeTo(300, 1);
+  $("#marquee-vertical").fadeTo(300, 1);
   }, 300);
   });
 });
@@ -93,6 +93,7 @@ function testcust(){
   document.getElementById("fil-case").classList.remove("active");
   document.getElementById("fil-whte").classList.remove("active");
   document.getElementById("fil-test").classList.remove("active");
+  
 }
 
 function testcase(){
@@ -101,6 +102,7 @@ function testcase(){
   document.getElementById("fil-case").classList.add("active");
   document.getElementById("fil-whte").classList.remove("active");
   document.getElementById("fil-test").classList.remove("active");
+
 }
 
 function testwhte(){
@@ -890,12 +892,13 @@ function tchsprtmob(){
   $("#tec-submit-mob").css("background-color", "#bbb0d5");
 }
 }
+function viewall(){
+  document.getElementById("view-more").classList.toggle("acc-hide");
+}
 
 
 
-
-
-
+/
 
 
 
